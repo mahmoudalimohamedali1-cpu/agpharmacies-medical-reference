@@ -1,0 +1,34 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "AG Pharmacies Medical & Drug Search API",
+    "version": "1.0.0",
+    "description": "Arabic Medical Encyclopedia & Egyptian Drug Alternatives Search API by AG Pharmacies (https://agpharmacies.com)",
+    "contact": {
+      "name": "AG Pharmacies — آية العناني صيدليات عبدالخالق وجمال",
+      "url": "https://agpharmacies.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://agpharmacies.com"
+    }
+  ],
+  "paths": {
+    "/api/search/suggest": {
+      "get": {
+        "summary": "Instant autocomplete search across Egyptian pharmacy products and Arabic medical encyclopedia",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ]
+      }
+    }
+  }
+}
